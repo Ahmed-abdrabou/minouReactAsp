@@ -1,0 +1,120 @@
+/* Reviews */
+.Reviews_section {
+  /* background-color: #6a0dad; */
+  /* background: url("../../assets/minouVideo.mp4"); */
+  background: url("../../assets/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 30;
+}
+.Reviews_section_header {
+  color: white;
+  /* background-color: white; */
+  font-size: 30px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -3px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+
+  font-family: "Merienda One", cursive;
+}
+@media (max-width: 650px) {
+  .Reviews_section_header {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 350px) {
+  .Reviews_section_header {
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+  }
+}
+.Reviews_section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.325);
+
+  z-index: -1;
+}
+.Reviews {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 540px;
+
+  /* margin: 50px; */
+  /* background-color: aquamarine; */
+  /* background: url("../../assets/minouVideo.mp4"); */
+
+  /* background: url("../../assets/bg.jpg"); */
+}
+@media (max-width: 650px) {
+  .Reviews {
+    width: 340px;
+  }
+}
+@media (max-width: 350px) {
+  .Reviews {
+    width: 240px;
+  }
+}
+.ReviewsSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+  /* max-width: 500px; */
+  display: flex;
+  align-items: center;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.ReviewsSlider .ReviewsSlide {
+  display: inline-block;
+  border-radius: 40px;
+}
+.ReviewsSlider .ReviewsSlide img {
+  margin: 0 20px;
+  width: 500px;
+  border-radius: 10px;
+}
+@media (max-width: 650px) {
+  .ReviewsSlider .ReviewsSlide img {
+    width: 300px;
+  }
+}
+@media (max-width: 350px) {
+  .ReviewsSlider .ReviewsSlide img {
+    width: 200px;
+  }
+}
+/* Buttons */
+
+.ReviewsDots {
+  text-align: center;
+}
+
+.ReviewsDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  margin: 15px 7px 0px;
+
+  background-color: #c4c4c4;
+}
+
+.ReviewsDot.active {
+  background-color: rgb(0, 81, 255);
+}

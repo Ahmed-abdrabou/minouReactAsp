@@ -1,0 +1,12 @@
+.MainDiscountBar {
+  width: 100%;
+  height: 40px;
+  background-color: red;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MainDiscountBar p {
+  color: white;
+}

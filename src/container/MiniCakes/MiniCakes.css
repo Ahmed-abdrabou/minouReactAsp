@@ -1,0 +1,14 @@
+.MiniCakes .section_images_container {
+  grid-template-columns: repeat(3, minmax(150px, 250px));
+}
+
+@media screen and (max-width: 769px) {
+  .MiniCakes .section_images_container {
+    grid-template-columns: repeat(3, minmax(100px, 300px));
+  }
+}
+@media screen and (max-width: 480px) {
+  .MiniCakes .section_images_container {
+    grid-template-columns: repeat(2, minmax(100px, 300px));
+  }
+}

@@ -1,0 +1,58 @@
+import { images } from ".";
+
+export const ProductsItems_cookies = [
+  {
+    id: 4,
+    productImage: images.ProductsItems_img_cookies_chocolate_ships_6_pics,
+    productName: "Chocolate Chips Cookies",
+    productDescription: "( Milk & Dark Chocolate Chips )",
+    pricedescription: "Box of 6 pieces",
+    price: 75,
+    ingredients: "Brown sugar, chocolate chips, eggs, baking soda, hot water",
+  },
+  {
+    id: 5,
+    productImage: images.ProductsItems_img_cookies_chocolate_ships_12_pics,
+    productName: "Chocolate Chips Cookies",
+    productDescription: "( Milk & Dark Chocolate Chips )",
+    pricedescription: "Box of 12 pieces",
+    price: 120,
+    ingredients: "Brown sugar, chocolate chips, eggs, baking soda, hot water",
+  },
+  {
+    id: 6,
+    productImage: images.ProductsItems_img_cookies_chocolate_ships_24_pics,
+    productName: "Chocolate Chips Cookies",
+    productDescription: "( Milk & Dark Chocolate Chips )",
+    pricedescription: "Box of 24 pieces",
+    price: 200,
+    ingredients: "Brown sugar, chocolate chips, eggs, baking soda, hot water",
+  },
+  {
+    id: 7,
+    productImage: images.ProductsItems_img_summer_cookies_12_pics,
+    productName: "Summer Cookies",
+    productDescription: "( Topped with royal icing )",
+    pricedescription: "Box of 12 pieces",
+    price: 180,
+    ingredients: "Brown sugar, chocolate chips, eggs, baking soda, hot water",
+  },
+  {
+    id: 8,
+    productImage: images.ProductsItems_img_summer_cookies_25_pics,
+    productName: "Summer Cookies",
+    productDescription: "( Topped with royal icing )",
+    pricedescription: "Box of 25 pieces",
+    price: 375,
+    ingredients: "Brown sugar, chocolate chips, eggs, baking soda, hot water",
+  },
+  {
+    id: 9,
+    productImage: images.ProductsItems_img_cookies_oatmeal,
+    productName: "Healthy Oatmeal raisin Bites",
+    productDescription: "( includes nuts & a mix spices )",
+    pricedescription: "Box of 10 pieces",
+    price: 100,
+    ingredients: "Brown sugar, chocolate chips, eggs, baking soda, hot water",
+  },
+];

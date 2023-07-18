@@ -1,0 +1,111 @@
+.DashboardSidBar_container {
+  position: fixed;
+  transform: translateX(-300px);
+  width: 350px;
+  /* background-color: aqua; */
+  background-color: transparent;
+  transition: 0.2s;
+
+  z-index: 100;
+}
+.DashboardSidBar_closeButton button {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+.DashboardSidBar_container.open {
+  transform: translateX(0);
+}
+
+.DashboardSidBar {
+  margin: 100px 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(195deg, #42424a, #191919);
+  /* background: linear-gradient(195deg, var(--orange-color), var(--pink-color)); */
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.05);
+  transition: 0.2s;
+  width: 90px;
+}
+.DashboardSidBar:hover {
+  width: 200px;
+}
+.DashboardSidBar:hover .DashboardSidBar_title div,
+.DashboardSidBar:hover .Dashboard__button div {
+  display: flex;
+}
+.DashboardSidBar_closeButton {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+}
+.DashboardSidBar_title {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  padding: 5px 0;
+}
+.DashboardSidBar_title div {
+  transition: display 3s;
+
+  display: none;
+  padding-left: 10px;
+}
+.DashboardSidBar_hr {
+  background-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    #ffffff,
+    rgba(255, 255, 255, 0)
+  ) !important;
+  height: 1px;
+  border: none;
+  margin: 20px 0px;
+}
+
+.Dashboard__button {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  margin: 20px 0px;
+  border-radius: 10px;
+  color: #ffffff;
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+.Dashboard__button:hover {
+  padding: 15px;
+  margin: 20px 0px;
+  border-radius: 10px;
+  background: linear-gradient(195deg, #42424a, #191919);
+  /* background: linear-gradient(195deg, var(--orange-color), var(--pink-color)); */
+
+  color: #ffffff;
+  width: 100%;
+  box-shadow: 0rem 0.25rem 0.375rem -0.0625rem rgba(0, 0, 0, 0.1),
+    0rem 0.125rem 0.25rem -0.0625rem rgba(0, 0, 0, 0.06);
+}
+.Dashboard__button div {
+  display: none;
+
+  padding-left: 10px;
+  font-size: small;
+  text-align: center;
+  align-self: center;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .DashboardSidBar {
+    width: 70px;
+  }
+  .Dashboard__button {
+    padding: 5px;
+    margin: 10px 0px;
+  }
+}

@@ -1,0 +1,11 @@
+.ProductsItems_container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(100px, 300px));
+}
+
+@media screen and (max-width: 769px) {
+  .ProductsItems_container {
+    grid-template-columns: repeat(2, minmax(100px, 300px));
+  }
+}

@@ -1,0 +1,276 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #f06a19;
+} */
+.countnumber {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.93);
+  z-index: 1000;
+  animation: remove 2s linear 25s forwards;
+  color: var(--pink-color);
+}
+@keyframes remove {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10000px);
+  }
+}
+
+.countnumber ul li:not(:last-child) {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 1000;
+  font-size: 5px;
+  list-style: none;
+  text-align: center;
+  width: 30000px;
+}
+
+.countnumber ul li:nth-child(1) {
+  opacity: 0;
+  animation: bulse 5s linear;
+}
+.countnumber ul li:nth-child(2) {
+  opacity: 0;
+  animation: bulse 5s linear 5s;
+}
+.countnumber ul li:nth-child(3) {
+  opacity: 0;
+  animation: bulse 5s linear 10s;
+}
+.countnumber ul li:nth-child(4) {
+  opacity: 0;
+  animation: bulse 5s linear 15s;
+}
+@keyframes bulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    font-size: 450px;
+  }
+}
+.countnumber ul li:nth-child(5) {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 1000;
+  font-size: 5px;
+  list-style: none;
+  text-align: center;
+  opacity: 0;
+  animation: bulse5 5s linear 20s;
+}
+@media screen and (max-width: 850px) {
+  .countnumber ul li:nth-child(5) {
+    width: 40vh;
+    font-size: 20px;
+  }
+  @keyframes bulse5 {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    380% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes bulse5 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    font-size: 50px;
+  }
+  100% {
+    opacity: 0;
+    font-size: 50px;
+  }
+}
+
+.App_GiftBoxAnimation_section div > audio {
+  position: fixed;
+  bottom: -90px;
+  left: 0%;
+  transform: translateY(-130px);
+  z-index: 30000;
+  opacity: 0.5;
+  rotate: -90deg;
+  scale: 90%;
+}
+.App_GiftBoxAnimation_container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 50%;
+  transform: translateX(50%);
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.93);
+  z-index: 10000;
+  position: fixed;
+}
+.bobup {
+  position: relative;
+  top: 20%;
+  right: 50%;
+  transform: translateX(50%);
+  transition: 0.5s;
+  color: #ffffff;
+  font-size: 37px;
+  text-align: center;
+  z-index: 100;
+
+  animation: opa 0.9s cubic-bezier(0.88, -0.7, 0.39, -0.47);
+}
+
+@keyframes opa {
+  0% {
+    transform: translateY(400px) translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px) translateX(50%);
+    opacity: 1;
+  }
+}
+.bobuptext1 {
+  font-size: 90px;
+  padding-bottom: 30px;
+}
+.bobuptext2 {
+  font-size: 20px;
+  transition: 5s;
+  padding: 30px;
+}
+@media screen and (max-width: 850px) {
+  .bobuptext1 {
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+  .bobuptext2 {
+    font-size: 15px;
+    padding: 30px;
+  }
+}
+.App_GiftBoxAnimation {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.box {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.box img {
+  margin: -5px;
+}
+
+.kuku {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+  z-index: -1;
+
+  width: 100px;
+  height: 100px;
+}
+
+.lid {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 5.8em;
+}
+
+.jump {
+  animation: 1s jump infinite alternate;
+}
+
+.move {
+  animation: 1s wiggle infinite linear;
+}
+
+.rotating {
+  animation: 1s rotating;
+}
+
+.rotated {
+  transform: rotate(145deg) translate(-70%, -170px);
+}
+
+@keyframes wiggle {
+  10%,
+  90% {
+    transform: translate(-50%) translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate(-50%) translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate(-50%) translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate(-50%) translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg) translate(-50%, 0);
+  }
+
+  100% {
+    transform: rotate(145deg) translate(-70%, -170px);
+  }
+}
+
+@keyframes jump {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 20em;
+  }
+}

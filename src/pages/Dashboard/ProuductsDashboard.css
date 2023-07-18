@@ -1,0 +1,328 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px to 991px) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 992px) {
+}
+.dashboard_Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard_Section h1 {
+  color: #ebeced;
+  font-size: 4em;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -3px;
+  /* margin-top: 40px; */
+  font-family: "Merienda One", cursive;
+}
+
+.ProuductsDashboard_controller button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff5a5f;
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.ProuductsDashboard_controller button:hover {
+  background-color: #ff4248;
+  transform: scale(1.05);
+}
+
+.ProuductsDashboard_controller button:focus {
+  outline: none;
+}
+
+.ProuductsDashboard_controller button:active {
+  transform: scale(0.95);
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .ProuductsDashboard_controller button {
+    padding: 5px 5px;
+    font-size: 7px;
+    margin: 2px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px to 991px) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .ProuductsDashboard_controller button {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 5px;
+  }
+}
+.ProuductsDashboard_controller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .ProuductsDashboard_controller {
+    margin-top: 70px;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .ProuductsDashboard_controller {
+    margin-top: 90px;
+  }
+}
+.ProuductsDashboard_controller .custom__button {
+  margin: 20px 30px;
+}
+/* Individual Dashboard styling */
+.add-product-dashboard {
+  float: left; /* To make AddProductDashboard float on the screen */
+  width: 40%; /* Adjust as needed */
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #000; /* Adjust as needed */
+  border-radius: 10px; /* Adjust as needed */
+}
+
+.edit-product-dashboard {
+  float: right; /* To make EditeProductDashboard float on the screen */
+  width: 40%; /* Adjust as needed */
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #000; /* Adjust as needed */
+  border-radius: 10px; /* Adjust as needed */
+}
+
+/* Modal styling */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px; /* You can adjust as per your requirement */
+}
+
+.modal-content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fefefe;
+
+  padding: 20px;
+  border: 1px solid #888;
+
+  width: 100%;
+  max-width: 1000px;
+
+  margin: 30px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.modal-content h2 {
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.modal-content label {
+  align-self: flex-start;
+  margin: 10px 0 5px 0;
+  font-weight: bold;
+  color: #555;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .modal-content label {
+    font-size: 10px;
+  }
+}
+/* Medium devices (landscape tablets, 768px to 991px) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .modal-content label {
+    font-size: 12px;
+  }
+}
+.modal-content input[type="text"],
+.modal-content input[type="number"],
+.modal-content select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  color: var(--pink-color);
+}
+
+.modal-content input[type="file"] {
+  border: none;
+  padding: 0;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .modal-content input[type="text"],
+  .modal-content input[type="number"],
+  .modal-content select {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+/* Medium devices (landscape tablets, 768px to 991px) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .modal-content input[type="text"],
+  .modal-content input[type="number"],
+  .modal-content select {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+.modal-content button {
+  background-color: #008cba;
+  color: white;
+  padding: 12px 24px;
+  margin: 10px 2px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.modal-content button:hover {
+  background-color: #007b9a;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .modal-content {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .modal-content button {
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+}
+/* Medium devices (landscape tablets, 768px to 991px) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+  .modal-content button {
+    padding: 12px 17px;
+    font-size: 12px;
+  }
+}
+.form_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form_header button {
+  right: 0;
+  position: absolute;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .form_header button {
+    right: -30px;
+    top: -40px;
+    position: absolute;
+  }
+}
+/* Medium devices (landscape tablets, 768px to 991px) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .form_header button {
+    right: -10px;
+    top: -20px;
+    position: absolute;
+  }
+}
+.form_content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.form_element {
+  margin: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .form_element {
+    margin: 0px;
+  }
+}
+.form_element input {
+  width: 100%;
+}
+.container {
+  display: flex;
+}
+.form_element_textarea {
+  width: 100%;
+}
+.form_element_textarea textarea {
+  padding: 10px;
+  width: 100%;
+  min-height: 100px;
+  color: var(--pink-color);
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .form_element_textarea textarea {
+    min-height: 50px;
+  }
+}
+/* Medium devices (landscape tablets, 768px to 991px) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .form_element_textarea textarea {
+    min-height: 70px;
+  }
+}

@@ -1,0 +1,66 @@
+.AboutMe {
+  flex-direction: row-reverse;
+  /* background-color: var(--section-background); */
+  height: 100vh;
+  --img-height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AboutMe_img_container {
+  margin: 0 80px;
+}
+.AboutMe_img {
+  position: relative;
+}
+.AboutMe_img img {
+  height: var(--img-height);
+}
+
+.AboutMe_img::before {
+  content: "";
+  position: absolute;
+  width: calc(var(--img-height) - 200px);
+  height: calc(var(--img-height) - 100px);
+  background-color: var(--pink-color);
+  top: -20px;
+  left: -30px;
+  z-index: -1;
+}
+.AboutMe_img::after {
+  content: "";
+  position: absolute;
+  height: calc(var(--img-height) - 100px);
+  width: calc(var(--img-height) - 200px);
+  background-color: var(--orange-color);
+  bottom: -20px;
+  right: -30px;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .AboutMe_img_container {
+    margin: 0px;
+  }
+  .AboutMe_img_container .AboutMe_img img {
+    height: calc(var(--img-height) - 200px);
+  }
+  .AboutMe_img::before {
+    width: calc(var(--img-height) - 300px);
+    height: calc(var(--img-height) - 200px);
+  }
+  .AboutMe_img::after {
+    height: calc(var(--img-height) - 200px);
+    width: calc(var(--img-height) - 300px);
+  }
+}
+/* .AboutMe_img::after {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 30px;
+  background-color: var(--pink-color);
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+} */

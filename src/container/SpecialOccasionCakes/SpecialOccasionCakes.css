@@ -1,0 +1,68 @@
+.SpecialOccasionCakes {
+  /* height: calc(100vh); */
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: var(--section-background); */
+}
+
+.SpecialOccasionCakes_Cards {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 300px));
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  .SpecialOccasionCakes_Cards {
+    grid-template-columns: repeat(2, minmax(100px, 300px));
+  }
+}
+.SpecialOccasionCakes_Card {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+
+  padding: 10px;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  background-color: var(--section-background);
+}
+
+.SpecialOccasionCakes_img-container {
+  border-radius: 10px;
+}
+.SpecialOccasionCakes_Card img {
+  width: 100%;
+  border-radius: 10px;
+  max-width: 300px;
+  min-height: 100px;
+  min-width: 100px;
+}
+
+.SpecialOccasionCakes_Card .Card_Title {
+  margin: 10px;
+  color: var(--pink-color);
+}
+
+.Card_Descrition {
+  margin: 10px;
+  padding: 10px 20px;
+
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .SpecialOccasionCakes_Card .Card_Title {
+    margin: 0px;
+    font-size: 1.5em;
+  }
+
+  .Card_Descrition {
+    margin: 0px;
+    font-size: 0.7em;
+    padding: 0.5rem 0rem;
+  }
+}

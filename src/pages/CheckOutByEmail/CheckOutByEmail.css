@@ -1,0 +1,193 @@
+.CheckOut_container .CheckOut_item input {
+  display: none;
+}
+.CheckOut_container .CheckOut_total input {
+  display: none;
+}
+
+.CheckOut_container input {
+  margin: 4px;
+  padding: 5px;
+  max-width: 300px;
+}
+.CheckOut_container textarea {
+  margin: 4px;
+  padding: 5px;
+
+  min-height: 100px;
+  max-height: 100px;
+  /* min-width: 200px; */
+  max-width: 300px;
+}
+.CheckOut_container {
+  padding-top: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+  background-color: var(--section-background);
+}
+@media screen and (max-width: 769px) {
+  .CheckOut_form_container {
+    flex-wrap: wrap;
+  }
+  .CheckOut_customerInfo {
+    margin: 20px;
+  }
+  .CheckOut_form_Control .custom__button {
+    font-size: 8px;
+    padding: 0px 10px;
+  }
+  .CheckOut_container p {
+    scale: 80%;
+  }
+}
+.CheckOut_form_Control {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.CheckOut_form_Control .custom__button {
+  font-family: var(--font-roboto);
+
+  margin: 10px;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .CheckOut_form_Control button {
+    font-size: 12px;
+  }
+}
+.CheckOut_form_Control button:hover {
+  background-color: var(--color-black);
+  color: var(--color-crimson);
+}
+.CheckOut_container h2 {
+  font-size: 20px;
+  margin: -10px 0 0;
+  text-align: center;
+  color: #797979;
+
+  font-size: 40px;
+  margin: 20px;
+}
+.CheckOut_container h1 {
+  padding: 100px;
+}
+.CheckOut_container p {
+  font-family: var(--font-roboto);
+}
+.CheckOut_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.CheckOut_form_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.CheckOut_items_container {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.CheckOut_items {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  padding: 10px 20px;
+  margin: 10px;
+  align-items: flex-start;
+}
+.CheckOut_item {
+  width: 300px;
+  padding: 9px 0px;
+}
+@media screen and (max-width: 769px) {
+  .CheckOut_item {
+    width: fit-content;
+
+    padding: 0px;
+  }
+}
+.CheckOut_item:not(:last-of-type) {
+  border-bottom: 1px solid black;
+}
+.CheckOut_item p {
+  font-size: 0.8rem;
+  padding: 2px;
+}
+
+.CheckOut_total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  padding: 30px;
+  margin: 10px;
+}
+.CheckOut_total p {
+  padding: 3px;
+}
+.CheckOut_form_container .CheckOut_customerInfo {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+
+  margin: 10px;
+  padding: 30px;
+}
+.CheckOut_customerInfo p {
+  margin: 5px;
+}
+.CheckOut_customerInfo button {
+  font-family: var(--font-roboto);
+
+  background-color: var(--pink-color);
+  box-shadow: 0px 3px 15px rgb(176, 0, 91);
+  color: var(--color-crimson);
+
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  line-height: 28px;
+  font-size: 16px;
+
+  margin: 10px;
+  padding: 0.2rem 1rem;
+  border-radius: 17px;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  text-align: center;
+}
+.CheckOut_customerInfo button:hover {
+  background-color: var(--color-crimson);
+  color: var(--color-black);
+  box-shadow: 0px 3px 15px rgb(255, 255, 255);
+}
+.order_id > input {
+  width: 200px;
+}

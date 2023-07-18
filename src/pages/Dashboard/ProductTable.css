@@ -1,0 +1,157 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px to 991px) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 992px) {
+}
+.table {
+  min-width: 100%;
+  -webkit-box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+  border-collapse: collapse;
+  color: #212529;
+  padding: 20px;
+  margin: auto;
+}
+
+.table thead.thead-primary {
+  background: #99b19c;
+}
+
+.table thead th {
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+th {
+  text-align: inherit;
+}
+
+.table th,
+.table td {
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table tbody th,
+.table tbody td {
+  text-align: center;
+  border: none;
+  font-size: 14px;
+  background: #fff;
+  border-bottom: 4px solid #f8f9fd;
+  vertical-align: middle;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .table thead th {
+    padding: 5px 5px;
+    font-size: 7px;
+  }
+  .table tbody th,
+  .table tbody td {
+    font-size: 7px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .table thead th {
+    padding: 5px 5px;
+    font-size: 12px;
+  }
+  .table tbody th,
+  .table tbody td {
+    font-size: 12px;
+  }
+}
+.table tbody td .product_img img {
+  width: 100px;
+  height: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .table tbody td .product_img img {
+    width: 30px;
+    height: 30px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .table tbody td .product_img img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.tabel_controller {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabel_controller button {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #ff5a5f;
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.tabel_controller button:hover {
+  background-color: #ff4248;
+  transform: scale(1.05);
+}
+
+.tabel_controller button:focus {
+  outline: none;
+}
+
+.tabel_controller button:active {
+  transform: scale(0.95);
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .tabel_controller button {
+    padding: 5px 5px;
+    font-size: 7px;
+    margin: 2px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .tabel_controller button {
+    padding: 5px 8px;
+    font-size: 12px;
+    margin: 5px;
+  }
+}

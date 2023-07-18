@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800appdisplay=swap");
+:root {
+  --card-width: 300px;
+  --card-height: 300px;
+
+  --card-transition-duration: 2500ms;
+  --card-transition-easing: ease;
+}
+
+.VoyageSlider {
+  position: relative;
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.cards_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  perspective: 1000px;
+  /* background-color: blue; */
+  /* overflow: hidden; */
+}
+.card_container {
+  --card-translateY-offset: 100vh;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  width: var(--card-width);
+  height: var(--card-height);
+
+  transform: translate(-50%, -50%) translateX(var(--card-translateX-offset))
+    translateY(var(--card-translateY-offset))
+    rotateY(var(--card-rotation-offset)) scale(var(--card-scale-offset));
+
+  display: inline-block;
+
+  transition: transform var(--card-transition-duration)
+    var(--card-transition-easing);
+
+  user-select: none;
+}
+
+.card_container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 1;
+
+  transition: opacity var(--card-transition-duration)
+    var(--card-transition-easing);
+
+  opacity: calc(1 - var(--opacity));
+
+  border-radius: 20px;
+}
+
+.card_image_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.card_image_container img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.card_container.currentcard1 {
+  --current-card-rotation-offset: 0;
+  --card-translateX-offset: 0;
+  --card-translateY-offset: 0;
+  --card-rotation-offset: var(--current-card-rotation-offset);
+  --card-scale-offset: 1.2;
+  --opacity: 0.8;
+  z-index: 1;
+}
+
+.card_container.prevcard0 {
+  --card-translateX-offset: calc(-1 * var(--card-width) * 1.1);
+  --card-rotation-offset: 25deg;
+  z-index: -1;
+  --card-translateY-offset: 0;
+}
+
+.card_container.nextcard2 {
+  --card-translateX-offset: calc(var(--card-width) * 1.1);
+  --card-rotation-offset: -25deg;
+  z-index: 2;
+  --card-translateY-offset: 0;
+}
+
+.card_container.prevcard0,
+.card_container.nextcard2 {
+  --card-scale-offset: 0.9;
+  --opacity: 0.4;
+}
+
+/* 
+
+*/
+.app_bg_container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+.app_bg_container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.app__bgg__image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translateX(var(--image-translate-offset, 0));
+  width: 100%;
+  height: 100%;
+  transition: transform var(--card-transition-duration)
+      var(--card-transition-easing),
+    opacity var(--card-transition-duration) var(--card-transition-easing);
+  /* overflow: hidden; */
+}
+@media (max-width: 767px) {
+  .app__bgg__image {
+    width: 100vh;
+  }
+}
+.app__bgg__image img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+.app__bgg__image.current--image1 {
+  opacity: 1;
+  --image-translate-offset: 0;
+}
+.app__bgg__image.previous--image0,
+.app__bgg__image.next--image2 {
+  opacity: 0;
+}
+.app__bgg__image.previous--image0 {
+  --image-translate-offset: -25%;
+}
+.app__bgg__image.next--image2 {
+  --image-translate-offset: 25%;
+}

@@ -1,0 +1,172 @@
+.DashboardNavBar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 40px 10px 40px;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0px 3px 15px rgba(60, 58, 58, 0.422);
+}
+
+/* side bar show */
+.DashboardNavBar .sideBar_control span {
+  font-size: 30px;
+}
+.DashboardNavBar .sideBar_control button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.right_Side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* --------------- search box --------------------------------*/
+.DashboardNavBar .searchBox {
+  position: relative;
+  cursor: pointer;
+}
+.DashboardNavBar .searchBox input {
+  padding: 3px 10px;
+  border-radius: 5px;
+  border-color: darkgrey;
+  background-color: #fff;
+  width: 400px;
+  outline: 0;
+  border-style: ridge;
+}
+.DashboardNavBar .searchBox input:focus {
+  border-color: #1a73e8;
+  border-width: 2px;
+  place-content: "";
+}
+.DashboardNavBar .searchBox input:focus + span {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 10px;
+  color: #1a73e8;
+  background-color: #fff;
+  padding: 0 10px;
+}
+.DashboardNavBar .searchBox span {
+  position: absolute;
+
+  top: 5px;
+  left: 15px;
+  font-size: 15px;
+  padding: 0 10px;
+  color: darkgrey;
+  transition: 0.1s;
+  user-select: none;
+  pointer-events: none;
+}
+/* links */
+.DashboardNavBar .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.DashboardNavBar .links .user_Name {
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+.DashboardNavBar .user_img img {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .DashboardNavBar {
+    padding: 10px 20px;
+  }
+
+  .DashboardNavBar .searchBox input {
+    width: 100%;
+  }
+
+  .DashboardNavBar .searchBox span {
+    top: 5px;
+    left: 10px;
+    font-size: 12px;
+  }
+
+  .DashboardNavBar .user_img img {
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .DashboardNavBar {
+    padding: 15px 30px;
+  }
+
+  .DashboardNavBar .searchBox input {
+    width: 200px;
+  }
+
+  .DashboardNavBar .searchBox span {
+    top: 2px;
+    left: 15px;
+    font-size: 14px;
+  }
+
+  .DashboardNavBar .user_img img {
+    margin: 8px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .DashboardNavBar {
+    padding: 20px 40px;
+  }
+
+  .DashboardNavBar .searchBox input {
+    width: 300px;
+  }
+
+  .DashboardNavBar .searchBox span {
+    top: 1px;
+    left: 20px;
+    font-size: 16px;
+  }
+
+  .DashboardNavBar .user_img img {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .DashboardNavBar {
+    padding: 20px 40px 10px 40px;
+  }
+
+  .DashboardNavBar .searchBox input {
+    width: 400px;
+  }
+
+  .DashboardNavBar .searchBox span {
+    top: 5px;
+    left: 15px;
+    font-size: 15px;
+  }
+
+  .DashboardNavBar .user_img img {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+  }
+}

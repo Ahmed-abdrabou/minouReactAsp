@@ -1,0 +1,138 @@
+.Cart {
+  background-color: var(--section-background);
+}
+
+.CartContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+
+  z-index: 2;
+}
+@media (max-width: 650px) {
+  .CartContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.CartContainer_header {
+  margin: 30px;
+}
+.CartContainer_header h1 {
+  color: #ebeced;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -3px;
+}
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+}
+@media (max-width: 767px) {
+  .CartContainer_header h1 {
+    font-size: 1.5em;
+  }
+}
+.Cart .CartContainer .Items {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 769px) {
+}
+
+.Cart .CartContainer .CartControl {
+  flex: 1;
+  margin-top: 30px;
+
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin: 10px;
+  padding: 10px;
+
+  background-color: var(--color-white);
+
+  /* position: fixed; */
+  /* right: 0; */
+}
+@media (max-width: 650px) {
+  .CartControl_text_p {
+  }
+}
+.CartControl_text_holder:last-of-type {
+  border-top: 1px solid black;
+  padding-top: 20px;
+}
+
+.CartControl .CartControl_text span {
+  color: var(--pink-color);
+}
+.CartControl_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.CartControl_text_holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px 0;
+  padding: 0 20px;
+}
+@media screen and (max-width: 769px) {
+  .CartControl {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .CartControl {
+    position: relative;
+  }
+}
+.CartControl p {
+  font-family: var(--font-roboto);
+  margin: 10px;
+}
+@media screen and (max-width: 769px) {
+  .CartControl p {
+    font-size: 10px;
+  }
+}
+
+.CartControl_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 769px) {
+  .CartControl_buttons {
+    flex-direction: row;
+  }
+}
+
+.CartControl_buttons .custom__button {
+  width: 100px;
+  height: 40px;
+
+  margin: 10px;
+
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.CartContainer h1 {
+  text-align: center;
+}

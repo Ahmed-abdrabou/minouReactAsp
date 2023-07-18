@@ -1,0 +1,58 @@
+.ContactUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ContactUs h2 {
+  font-family: var(--font-base);
+  color: var(--color-white);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-size: 32px;
+  line-height: 41.6px;
+  margin-bottom: 1rem;
+}
+
+.ContactUs input {
+  width: 200px;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+}
+.ContactUs textarea {
+  padding: 5px;
+  border: none;
+}
+.ContactUs button {
+  background-color: var(--color-crimson);
+  color: var(--color-black);
+
+  box-shadow: 0px 3px 15px rgb(176, 0, 91);
+
+  font-weight: 300;
+  letter-spacing: 0.14em;
+  line-height: 28px;
+  font-size: 16px;
+
+  margin: 10px;
+  padding: 0.2rem 1rem;
+  border-radius: 17px;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .ContactUs button {
+    font-size: 12px;
+  }
+}
+.ContactUs button:hover {
+  background-color: var(--color-black);
+  color: var(--color-crimson);
+}

@@ -1,0 +1,134 @@
+/* .header_h2_animation {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.header_h2_animation.active {
+  transform: translateY(0);
+  opacity: 1;
+} */
+.header_h2_animation {
+  animation: fromtop 2s linear;
+}
+
+@keyframes fromtop {
+  0% {
+    transform: translate(0, -50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+.header_p_animation {
+  animation: frombottom 2s linear;
+}
+
+@keyframes frombottom {
+  0% {
+    transform: translate(0, +50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+.app__header {
+  height: calc(100% - 60px);
+  position: relative;
+  overflow: hidden;
+  /* background: url("D:/MINOU/minou website/menou site 4/minou-pastery-4/src/assets/bg.jpg"); */
+  /* background-origin: calc(50%, 50%); */
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
+}
+.app__header:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000065;
+  z-index: 1;
+}
+
+@media screen and (max-width: 650px) {
+  .app__header {
+    /* height: 600px; */
+  }
+}
+.header-foot {
+  display: flex;
+  align-items: center;
+}
+.header-foot-bg {
+  width: 100%;
+  height: 80px;
+  left: 0;
+
+  position: absolute;
+
+  bottom: 0%;
+
+  background: url(../../assets/breaker80.png) repeat-x;
+  z-index: 3;
+}
+.header-foot_button {
+  transform: translateX(-50%);
+  z-index: 3;
+  left: 50%;
+  position: absolute;
+  margin-top: 30px;
+}
+.app__header-text {
+  position: absolute;
+  width: 90%;
+  right: 50%;
+  bottom: 50%;
+  /* transform: translate(50%, 50%); */
+  transform: translateX(50%);
+
+  text-align: center;
+  z-index: 2;
+}
+.app__header-text h2 {
+  margin: 10px;
+  color: var(--pink-color);
+  font-size: 90px;
+  text-shadow: 2px 2px black;
+}
+
+.app__header-text p {
+  margin: 10px;
+  padding-top: 30px;
+  color: var(--color-white);
+  font-size: 20px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  line-height: 30px;
+  text-shadow: 2px 2px black;
+}
+@media screen and (max-width: 769px) {
+  .app__header-text h2 {
+    font-size: 40px;
+  }
+  .app__header-text p {
+    font-size: 15px;
+    padding-top: 20px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .app__header-text h2 {
+    font-size: 40px;
+  }
+  .app__header-text p {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+}
